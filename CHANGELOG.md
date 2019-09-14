@@ -1,3 +1,3 @@
-# 1.0.0 [dd mm, yyyy] "RELEASE INFO"
+# 1.0.0 [14 Sept, 2019] INITIAL RELEASE
 
-- Details about release goes here
+- useNodeSize hook to measure the sizes of HTML nodes

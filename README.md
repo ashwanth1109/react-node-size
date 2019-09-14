@@ -1,3 +1,1 @@
-# NPM Package Boilerplate Simple
-
-This is a minimalist boilerplate repo for publishing npm packages.
+# react-node-size: useNodeSize hook to measure the size of HTML nodes

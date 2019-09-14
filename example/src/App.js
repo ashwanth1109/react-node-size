@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import useNodeSize from "../../src";
+import useNodeSize from "react-node-size";
 
 const cs = {
   fCenter: {

@@ -1,7 +1,7 @@
 {
-  "name": "simple-npm-package",
+  "name": "react-node-size",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react hook to measure the sizes of your html nodes",
   "repository": "https://github.com/ashwanth1109/react-node-size",
   "homepage": "https://ashwanth1109.github.io/react-node-size",
   "main": "lib/index.js",
@@ -15,26 +15,27 @@
     "prepare": "yarn build:lib",
     "build:example": "parcel build example/index.html --public-url /react-node-size/",
     "start:example": "parcel example/index.html",
-    "predeploy": "yarn build",
+    "predeploy": "yarn build:example",
     "deploy": "gh-pages -d dist"
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
     "gh-pages": "^2.1.1",
     "parcel-bundler": "^1.12.3",
-    "react-dom": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-node-size": "^1.0.0"
   },
   "peerDependencies": {
-    "react": "^16.9.0"
-  },
-  "dependencies": {
     "react": "^16.9.0"
   }
 }
