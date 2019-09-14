@@ -2,7 +2,8 @@
   "name": "simple-npm-package",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/ashwanth1109/repo-name",
+  "repository": "https://github.com/ashwanth1109/react-node-size",
+  "homepage": "https://ashwanth1109.github.io/react-node-size",
   "main": "lib/index.js",
   "author": "Ashwanth A R <ashwanth1109@gmail.com>",
   "license": "MIT",
@@ -10,8 +11,12 @@
     "/lib"
   ],
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "prepare": "yarn build"
+    "build:lib": "babel src --out-dir lib",
+    "prepare": "yarn build:lib",
+    "build:example": "parcel build example/index.html --public-url /react-node-size/",
+    "start:example": "parcel example/index.html",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "babel": {
     "presets": [
@@ -21,6 +26,15 @@
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0"
+    "@babel/preset-env": "^7.6.0",
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.3",
+    "react-dom": "^16.9.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "dependencies": {
+    "react": "^16.9.0"
   }
 }
